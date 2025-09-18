@@ -5,18 +5,18 @@ and basic comparison.
 
 
 //remember that strings go in quotes
-let ageString = "17"; //set age to "17"
+let ageString = "17" //set age to "17"
 
 
 //lets try again as a number
-let age = 17; //set age to 17
+let age = 17//set age to 17
 
 //use a comparison (< or >) to determine if age is at least 18
 //note the variable type
 let isAdult= age>=18;
 
 //change the following line (if necessary) so "something" is undefined
-let something = unedfined;
+let something = undefined;
 
 //change the following line (if necessary) so "nothing" is null
 //note the type!
