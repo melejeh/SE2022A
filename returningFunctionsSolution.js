@@ -57,10 +57,10 @@ let getDictionary = function (lang)
         Write an if-statement that would return either the engishDictionary or the frenchDictionary 
         based on the value of the argument 'lang'
     */
-   if(lang=='E'){
+   if(lang==='E'){
     return englishDictionary;
    }
-   else if (lang=="F"){
+   else if (lang==="F"){
     return frenchDictionary
    }
 }

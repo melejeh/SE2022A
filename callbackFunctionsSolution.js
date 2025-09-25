@@ -35,7 +35,7 @@ let null_predicate = function (value)
         whether the given value is null
          (be careful with the implicit coercion) 
     */
-    return value ==null;
+    return value ===null;
 };
 
 
@@ -49,7 +49,7 @@ let check = function (predicate,value)
 
 //DO NOT CHANGE ORDER OF OUTPUT
 console.log(check(even_predicate,9))/* call the check function here to check whether 9 is even */;
-console.log(check(odd_predicatte))/* call the check function here to check whether 9 is odd */;
+console.log(check(odd_predicate,9))/* call the check function here to check whether 9 is odd */;
 console.log(check(even_predicate,8)) /* call the check function here to check whether 8 is even */;
 console.log(check(odd_predicate,8))/* call the check function here to check whether 8 is odd */;
 let x;
