@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Explorer</title>
+</head>
+<body>
+  <h1>Course Explorer</h1>
+
+  <section>
+    <h2>Load Courses (JSON)</h2>
+    <input id="file-input" type="file" accept=".json">
+    <div id="error-message" style="color:red; margin-top:4px;"></div>
+  </section>
+
+  <section>
+    <h2>Sort and Filter</h2>
+    <label>Department:
+      <select id="department-filter">
+        <option value="">All</option>
+      </select>
+    </label>
+
+    <label>Level:
+      <select id="level-filter">
+        <option value="">All</option>
+      </select>
+    </label>
+
+    <label>Credits:
+      <select id="credits-filter">
+        <option value="">All</option>
+      </select>
+    </label>
+
+    <label>Instructor:
+      <select id="instructor-filter">
+        <option value="">All</option>
+      </select>
+    </label>
+
+    <label>Sort By:
+      <select id="sort-select">
+        <option value="none">None</option>
+        <option value="id-asc">ID (A–Z)</option>
+        <option value="id-desc">ID (Z–A)</option>
+        <option value="title-asc">Title (A–Z)</option>
+        <option value="title-desc">Title (Z–A)</option>
+        <option value="sem-earliest">Semester (Earliest first)</option>
+        <option value="sem-latest">Semester (Latest first)</option>
+      </select>
+    </label>
+  </section>
+
+  <!-- Two-column layout: list + details -->
+  <section style="display:flex; gap:20px; margin-top:15px;">
+    <ul id="course-list" style="flex:0 0 250px; list-style:none; padding:0; margin:0; border:1px solid #ddd; max-height:500px; overflow-y:auto;">
+      <!-- course items will go here -->
+    </ul>
+
+    <div id="course-details" style="flex:1; border:1px solid #ddd; padding:15px;">
+      <p>Select a course to view details.</p>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
